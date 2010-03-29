@@ -1,0 +1,6 @@
+	<li style="list-style-type: none;" id="parcours"><b><%= "Parcours".t %> :</b> 
+			<% @parcours.each_with_index do | parcour, index | %>
+			<% if  index > 0 %>,<% end %>
+			<%= link_to parcour.title %>
+			<% end %>
+		</li>

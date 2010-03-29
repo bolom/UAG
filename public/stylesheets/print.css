@@ -1,0 +1,64 @@
+body {
+	background: white;
+	font-size: 11pt;
+	font: 78% "Palatino","Book Antiqua","Garamond","Goudy","Bembo", sans-serif;
+}
+
+h1 {
+	font-size: 15pt;
+}
+
+#container {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: none !important;
+	color: black;
+	background: transparent;
+}
+
+#contenu {
+	width:100%;
+}
+
+p {
+	text-align: justify;
+}
+#contenu a:link:after, #contenu a:visited:after {
+  content: " (" attr(href) ") ";
+  font-size: 90%;
+ }
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+#footer {
+	display: none;
+}
+
+#navigation {
+	display: none;
+}
+
+dl {
+	display: none;
+}
+
+#header {
+	display: none;
+}
+
+/*-----------------------------------------------------------------------------------------------
+  Logo
+-----------------------------------------------------------------------------------------------*/
+#logo {
+	display: none;
+}
+
+hr {
+display: none;	
+}

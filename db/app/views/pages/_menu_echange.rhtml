@@ -1,0 +1,28 @@
+<dl>
+	<dt><%= link_to "étudiants européens et internationaux".t,:controller => "pages", :action => "etudiantsUE" %></dt>
+	<dd>
+		<ul>
+			<li style="list-style-type: none;"><%= link_to "Le département".t,:controller => "pages", :action => "etudiantsUE" %></li>
+			<li style="list-style-type: none;"><%= link_to "Les cours".t, :controller => "pages",:action => "cours" %></li>
+			<li style="list-style-type: none;"><%= link_to "La vie du Campus".t, :controller => "pages",:action => "vie_campus" %></li>
+		</ul>
+	</dd>
+	<dt><%= link_to "étudiants de l’uag".t, :action => "etudiantsUAG" %></dt>
+	<dd>
+		<ul>
+			<li style="list-style-type: none;"> <%= link_to "Opportunités &amp; Possibilités".t,:controller => "pages", :action => "etudiantsUAG" %></li>
+			<li style="list-style-type: none;"><%= link_to "Informations Pratiques".t, :controller => "pages",:action => "infosUAG" %></li>
+			<li style="list-style-type: none;"><%= link_to "Contact".t, :controller => "pages",:action => "contact" %></li>
+		</ul>
+	</dd>
+	<dt><%= link_to "échanges enseignants".t, :controller => "pages",:action => "enseignants" %></dt>
+	<dd>
+		<ul>
+		   <li style="list-style-type: none;"><%= link_to "Stratégies &amp; Opportunités".t,:controller => "pages", :action => "enseignants" %></li>
+			<li style="list-style-type: none;"><%= link_to "Informations pratiques".t, :controller => "pages",:action => "informations_enseignants" %></li>
+		</ul>
+	</dd>
+	<dt style="list-style-type: none;" ><%= link_to "Universités Partenaires".t, :controller => "pages",:action => "partenaires" %></dt>
+		<dt style="list-style-type: none;" ><%= link_to "Témoignages".t,:controller => "pages", :action => "temoignages" %></dt>
+	<dt style="list-style-type: none;"><%= link_to "Documents Administratifs".t, groupe_documents_url  %></dt>
+</dl>

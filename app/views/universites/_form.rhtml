@@ -1,0 +1,8 @@
+<h3>Nom de l'université</h3><%= f.text_field :name   ,{:style => "width: 300px"} %> </p>
+<h3>Site Web</h3><%= f.text_field :link   ,{:style => "width: 300px"} %> </p>  
+<h3>Etudiants</h3><%= f.text_field :students   ,{:style => "width: 300px"} %> </p> 
+<h3>Description</h3><%= f.text_area :definition,  {:style => "width: 500px"} %></p> 
+<h3>Remarques</h3><%= f.text_area :remarque,  {:style => "width: 500px"} %></p> 
+<p>
+    <label for="photo">Photo</label><%= f.file_field :uploaded_data %>
+  </p>

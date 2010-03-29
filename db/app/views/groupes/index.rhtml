@@ -1,0 +1,19 @@
+<%= render :partial => 'shared/menu_formation' %>
+<div id="contenu">
+	<h1>Les groupes</h1>
+	<div id="add_parcour">
+		<% form_for(:groupe, :url => groupes_path) do |f| %>
+		<%= f.text_field :title %> 
+		<%= f.select :type_groupe , %w{ cycle parcours lieu }, { :selected => @groupe.type_groupe }%>
+		<%= submit_tag "Ajouter un nouveau groupe" %>
+		<% end %>	
+	</div>
+	<ul id="all_parcours">
+		<% for groupe in @groupes %>
+		<%= render :partial => 'liste_groupes',  :locals => { :groupe => groupe} %>
+		<% end %>
+	</ul>
+</div>
+
+</div>
+<hr/>

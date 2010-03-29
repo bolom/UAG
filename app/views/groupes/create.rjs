@@ -1,0 +1,2 @@
+page.insert_html :bottom, 'all_parcours',:partial => 'liste_groupes', :locals => { :groupe => @groupe }
+page.visual_effect :highlight, 'all_parcours', :duration => 3

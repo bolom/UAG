@@ -1,0 +1,5 @@
+<ul>
+	<% for enseignant in @enseignants %>
+	<li><%= link_to ( enseignant.prenom + " " +enseignant.nom.upcase), enseignant_path(:id => enseignant) %></li>
+	<% end %>
+</ul>

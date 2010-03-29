@@ -1,0 +1,12 @@
+<%= error_messages_for :enseignant %>
+
+<% form_for :enseignant, 
+			:url => enseignant_path(:id => @enseignant), 
+			:html  =>  {:method => :put, :multipart => true} do |f| -%>
+				
+	<%= render :partial => 'form', :locals => { :f => f } %>
+  <p>
+    <%= submit_tag "Modifier la fiche" %>
+  </p>
+<% end -%>
+ <p><%= link_to 'Voir la fiche', enseignant_path(:id => @enseignant) %> | <%= link_to 'Tous les enseignements', enseignants_path %> | <a href="http://www.siriel.info/misc/guide-styles.html">Comment Formater</a></p>

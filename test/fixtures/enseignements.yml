@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one:
+  id: 1
+  libelle: 
+  volume: MyString
+  heures_perso: MyString
+  ects: MyString
+  question: MyText
+  objectif: MyText
+  bibliographie: MyText
+  evaluation: MyText
+  remarque: MyText
+  plan: MyText
+two:
+  id: 2
+  libelle: 
+  volume: MyString
+  heures_perso: MyString
+  ects: MyString
+  question: MyText
+  objectif: MyText
+  bibliographie: MyText
+  evaluation: MyText
+  remarque: MyText
+  plan: MyText

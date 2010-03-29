@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+one:
+  id: 1
+  enseignement_id: 
+  enseignant_id: 
+two:
+  id: 2
+  enseignement_id: 
+  enseignant_id: 

@@ -1,0 +1,14 @@
+<dl>
+	<dt><%= link_to 'enseignants'.t, enseignants_path %></dt>
+	<dd>
+		<ul>
+			<li style="list-style-type: none;"><%= link_to 'Archéologie'.t, enseignants_path(:tag => "Archeo") %></li>
+			<li style="list-style-type: none;"><%= link_to 'Histoire ancienne'.t, enseignants_path(:tag => "Hist_anci") %></li>
+			<li style="list-style-type: none;"><%= link_to 'Histoire médiévale'.t, enseignants_path(:tag => "Hist_medi") %></li>
+			<li style="list-style-type: none;"><%= link_to 'Histoire moderne'.t, enseignants_path(:tag => "Hist_mode") %></li>
+			<li style="list-style-type: none;"><%= link_to 'Histoire contemporaine'.t, enseignants_path(:tag => "Hist_conte") %></li>
+		</ul>
+	</dd>
+	<dt><%= link_to 'Intervenants externes'.t, enseignants_path(:tag => "Ext") %></dt>
+	<dt><%= link_to 'Administratifs'.t, enseignants_path(:tag => "Adm") %></dt>
+</dl>

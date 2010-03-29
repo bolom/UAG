@@ -1,0 +1,32 @@
+ <%= render :partial => 'shared/menu_user' %>
+<div id="contenu">
+	<h2>Liste de diffusion "<%=h @mailling_list.label %>"</h2>
+	<ul>
+	<% for couriel in @mailling_list.couriels %>
+	<li><%= couriel.email %> 
+	<%= link_to image_tag('trash.gif'), mailling_list_couriel_path(@mailling_list,couriel), :confirm => 'Etes vous sure ?', :method => :delete %>
+	</li>
+	<% end %>
+	</ul>
+   <h2>Ajouter un e-mail à la liste de diffusion</h2>
+	<% form_for(:couriel, 
+		:url => mailling_list_couriels_path(@mailling_list) ) do |f| %>
+	<p><%= f.text_field :email %> <%= submit_tag "Ajouter cet e-mail" %></p>
+	<% end %>
+	<h2>Envoyer l'email</h2>
+	<% form_for (:contact, @contact,
+				 :url => {:action => "send_mailling"}, 
+				:html  =>  {:multipart => true}) do |f| %>
+		<fieldset class="publicForm" style="width: 600px">
+			<p><label class="oblig"> Sujet :</label><%= f.text_field :subject %></p>
+			<p><label class="oblig">Pièce Jointe :</label>
+				<%= file_field_tag "file" %>
+			</p>
+			<p><label class="oblig">* Message :</label><%= f.text_area :message, :rows => 10 %></p>
+				<%= hidden_field_tag 'mailling_list_id', @mailling_list.id %>  
+	 </fieldset>
+	<div class="piedForm">
+		<%= submit_tag 'Envoyer votre email', :class => 'inputButton' %>
+	</div>
+	<% end %>
+</div>

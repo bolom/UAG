@@ -1,0 +1,13 @@
+<h3>Libéllé</h3><%= f.text_field :libelle ,	{:style => "width: 400px"} %>
+<h3>Volume Horaire :</h3><%= f.text_field :volume ,	{:style => "width: 400px"} %>
+<h3>Travail personnel de l'étudiant :</h3><%= f.text_field :heures_perso ,{:style => "width: 400px"} %>
+<h3>ECTS :</h3><%= f.text_field :ects,	{:style => "width: 400px"} %>
+<h3>Question au programme : </h3><%= f.text_field  :question ,	{:style => "width: 400px"} %>
+<h3> Dossier de l'enseigment : </h3> <%= f.select :groupe_document_id, @groupe_documents.collect {|c| [ c.label, c.id ]},{:prompt => "-- Aucun Dossier --"} %>
+<h3>Objectifs :</h3><%= f.text_area :objectif,  :rows => 20 , :cols => 100 , :id => "objectif"%>
+<h3>Plan indicatif des séances :</h3><%= f.text_area  :plan ,  :rows => 20 , :cols => 100, :id => "plan"%>
+<h3>Bibliographie :</h3><%= f.text_area :bibliographie,  :rows => 20 , :cols => 100, :id => "biblio"%>
+<h3>Evaluation :</h3><%= f.text_area :evaluation ,  :rows => 20 , :cols => 100, :id => "eva"%>
+<h3>Contenu</h3><%= f.text_area :contenu ,  :rows => 20 , :cols => 100, :id => "cont"%>
+<h3>Remarque</h3><%= f.text_area :remarque , :rows => 20 , :cols => 100, :id => "remarque"%>
+<%= f.hidden_field :last_udptated,:value => name_user %>

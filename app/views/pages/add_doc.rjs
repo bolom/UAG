@@ -1,0 +1,6 @@
+@value =  	'"'+params[:document_nom]+'"' +":http://www.uag-histoire.com"+ params[:document_filename]
+@textara = params[:document_textara]
+page.insert_html :bottom, @textara, @value
+
+
+

@@ -1,0 +1,19 @@
+<% if logged_in?  %>
+	<p><%= link_to 'Ajouter une formation', new_enseignement_path %> </p>
+	<ul>
+		<% for enseignement in @enseignements %>
+		<li>
+		<%= link_to enseignement.libelle + " " + enseignement.question, enseignement_path(:id => enseignement) %> 
+		<%= link_to image_tag('edit.png'), edit_enseignement_path(:id => enseignement) %>
+		 <%= link_to image_tag('trash.gif'), enseignement_path(:id => enseignement), :confirm => 'Etes vous sûre ?', :method => :delete %>
+		</li>
+		<% end %>
+	</ul>
+		<% else %>
+		<ul>
+			<% for enseignement in @enseignements %>
+			<li><%= link_to enseignement.libelle + " " + enseignement.question, enseignement_path(:id => enseignement) %></li>
+			<% end  %>
+			
+		</ul>
+<% end %>

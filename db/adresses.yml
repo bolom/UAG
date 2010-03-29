@@ -1,0 +1,46 @@
+adresses:
+    - guadeloupe
+    - martinique
+    - guyane
+
+martinique_fr: 
+    - Université des Antilles et de la Guyane<br />
+    - Faculté des Lettres et Sciences Humaines<br />
+    - Département d'Histoire<br />
+    - B.P. 7207<br />
+    - F – 97275 Schœlcher CEDEX<br />
+
+martinique_en: 
+    - Université des Antilles et de la Guyane<br />
+    - Faculté des Lettres et Sciences Humaines<br />
+    - Département d'Histoire<br />
+    - B.P. 7207<br />
+    - F – 97275 Schœlcher CEDEX<br />
+    
+guadeloupe_fr: 
+    - Université des Antilles et de la Guyane<br />
+    - Faculté des Lettres et Sciences Humaines<br />
+    - Département Pluridisciplinaire de Lettres et de Sciences Humaines<br />
+    - Camp Jacob – Rue des Officiers<br/>
+    - F – 97120 Saint Claude<br />
+    
+guadeloupe_en: 
+    - Université des Antilles et de la Guyane<br />
+    - Faculté des Lettres et Sciences Humaines<br />
+    - Département Pluridisciplinaire de Lettres et de Sciences Humaines<br />
+    - Camp Jacob – Rue des Officiers<br/>
+    - F – 97120 Saint Claude<br />
+
+guyane_fr: 
+    - Université des Antilles et de la Guyane<br />
+    - Institut d’Enseignement Supérieur de la Guyane<br />
+    - Campus de Saint Denis<br />
+    - Avenue d’Estrées – BP 792<br/>
+    - F – 97337 Cayenne CEDEX<br />
+
+guyane_en: 
+    - Université des Antilles et de la Guyane<br />
+    - Institut d’Enseignement Supérieur de la Guyane<br />
+    - Campus de Saint Denis<br />
+    - Avenue d’Estrées – BP 792<br/>
+    - F – 97337 Cayenne CEDEX<br />

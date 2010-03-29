@@ -1,0 +1,23 @@
+<%= render :partial => @page %>
+<div id="contenu">
+	<h1><%="Documents administratifs et d'information".t%></h1>
+	<p><%= "Information et documents administratifs du département d'histoire".t %></p>
+	<ul>
+	<% @documents.each do |document| -%>
+	<li>
+	<%= link_to document.filename, document.public_filename %>
+	<% if is_admin? %>
+	<%= link_to image_tag('trash.gif'),
+	 				document_path(:groupe_document_id => document.groupe_document,:id => document), 
+					:confirm => 'Etes vous sure ?', :method => :delete %>
+ 	<%= link_to image_tag('edit.png'), edit_document_path(:id =>document) %>
+	<% end %> 
+	<% unless document.description.blank? %>
+	<%=  RedCloth.new(document.description).to_html %>
+	<% end %>	
+	</li>
+	<% end -%>
+	</ul>
+</div>
+<hr/>
+	

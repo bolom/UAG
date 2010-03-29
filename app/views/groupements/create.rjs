@@ -1,0 +1,8 @@
+if @type_groupement == "enseignement"
+  @parcours = @groupement.enseignement.parcours
+  page.replace 'parcours', :partial => 'enseignements/liste_parcours'
+else
+  page.alert("oo")
+  page.insert_html :bottom, 'all_enseignements',:partial => 'groupes/liste_enseignements', :locals => { :enseignement => @groupement.enseignement  }
+  page.visual_effect :highlight, 'all_enseignements', :duration => 3 
+end

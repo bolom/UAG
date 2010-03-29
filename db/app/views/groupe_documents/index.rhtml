@@ -1,0 +1,12 @@
+<%= render :partial => @page %>
+<div id="contenu">
+<h2><%= "Documents administratifs et d'information".t  %></h2>
+	<p><%= "Vous pouvez chercher un document dans une catégorie spécifique".t  %>:</p>
+	<ul>
+		<% for groupe in @groupes %>
+		<li><%= link_to groupe.label, groupe_document_url(:id => groupe)  %> </li>
+		<% end %>
+	</ul>
+	
+	<p><%= "Ou dans".t  %> <%= link_to "la liste de tous les documents administratifs".t, documents_url  %></p>
+</div>

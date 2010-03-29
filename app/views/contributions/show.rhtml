@@ -1,0 +1,13 @@
+<p>
+  <b>Enseignement:</b>
+  <%=h @contribution.enseignement_id %>
+</p>
+
+<p>
+  <b>Enseignant:</b>
+  <%=h @contribution.enseignant_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_contribution_path(@contribution) %> |
+<%= link_to 'Back', contributions_path %>

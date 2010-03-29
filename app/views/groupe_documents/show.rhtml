@@ -1,0 +1,32 @@
+<%= render :partial => @page %>
+<div id="contenu">
+	<% if logged_in?  %>
+		<h2><%= in_place_editor_field :groupe_document, 'label' %></h2>
+		<ul>
+		<% for document in @groupe_document.documents %>
+		<li><%= link_to document.filename, document.public_filename %> 
+		    <%= link_to image_tag('trash.gif'), 
+				document_path(:id => document), 
+				:confirm => 'Etes vous sure ?', :method => :delete %>
+				<% unless document.description.blank? %>
+				<%=  RedCloth.new(document.description).to_html %>
+				<% end %>
+		</li>
+		<% end %>
+		</ul>
+		<br/>
+		<h2>Ajouter un Document</h2>
+			<% form_for :document, :url => documents_path(:groupe_document_id => @groupe_document), :html => { :multipart => true } do |f| -%>
+				<h3>Description  </h3>
+				<%= f.text_area :description ,:rows => 3 , :cols => 50%>
+			<p><%= f.file_field :uploaded_data %> <%= submit_tag "Ajouter un nouveau document" %></p>
+		<% end %>
+		<% else -%>
+			<h2><%= @groupe_document.label %></h2>
+		<ul>
+		<% for document in @groupe_document.documents %>
+		<li><%= link_to document.filename, document.public_filename %></li>
+		<% end %>
+		</ul>
+	<% end %>
+</div>

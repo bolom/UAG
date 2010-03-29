@@ -1,0 +1,38 @@
+<dl>
+	<dt><%= link_to "Licence".t, :controller => "pages", :action => "formations" %></dt>
+	<dd>
+		<ul>
+			<li style="list-style-type: none;"><%= link_to "Présentation".t, :controller => "pages", :action => "formations" , :anchor => "presentation" %></li>
+					<li style="list-style-type: none;"><%= link_to "L1".t, enseignements_path(:tag => @l1) %></li>
+					<li style="list-style-type: none;"><%= link_to "L2".t, enseignements_path(:tag => @l2) %></li>
+					<li style="list-style-type: none;"><%= link_to "L3".t, enseignements_path(:tag => @l3) %></li>
+			<li style="list-style-type: none;">
+			<%= link_to "Tous".t, enseignements_path(:tag => @licence) %></li>
+		</ul>
+	</dd>
+	<dt><%= link_to "Master &amp; Doctorat".t, :controller => "pages", :action => "master" %></dt>
+	<dd>
+		<ul>
+			<li style="list-style-type: none;">
+			<%= link_to "Présentation".t, :controller => "pages", :action => "master" , :anchor => "presentation" %>
+			</li>
+			<li style="list-style-type: none;"><%= link_to "M1".t, enseignements_path(:tag => @m1) %></li>
+			<li style="list-style-type: none;"><%= link_to "M2".t, enseignements_path(:tag => @m2) %></li>
+			<li style="list-style-type: none;"><%= link_to "Tous".t, enseignements_path(:tag => @master) %></li>
+		</ul>
+	</dd>
+	<dt><%= "Parcours".t %></dt>
+	<dd>
+	<ul>
+		<% for parcour in @parcours %>
+		<li style="list-style-type: none;">
+		<%= link_to parcour.title, enseignements_path(:tag  => parcour.id) %></li>
+		<% end %>
+	</ul>
+	</dd>
+	<dt style="list-style-type: none;"><%= link_to "Saint Claude", enseignements_path(:tag => @saint_claude) %></dt>
+		<dt style="list-style-type: none;"><%= link_to "Schoelcher", enseignements_path(:tag => @schoelcher) %></dt>
+	<% if is_admin? %>
+	<dt><%= link_to 'Groupes', groupes_path %></dt>
+	<% end -%>
+</dl>

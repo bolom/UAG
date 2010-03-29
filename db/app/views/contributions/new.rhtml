@@ -1,0 +1,6 @@
+
+<%= error_messages_for :contribution %>
+
+<% form_for(:contribution, :url => contributions_path) do |f| %>
+<%= render :partial => 'shared/form_contribution' , :locals => { :f => f } %>
+<% end %>

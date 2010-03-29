@@ -1,0 +1,27 @@
+	<div id="welcome" class="sous_barre">
+		<h1><%= "Département d'Histoire de l'U.A.G".t %></h1>
+		<p>L’Université des Antilles et de la Guyane est la seule université francophone des départements français d’Amérique. Son Département d’Histoire accueille les étudiants résidants dans les D.O.M. des Caraïbes et les étudiants de France métropolitaine, d’Europe – en particulier dans le cadre ERASMUS – ou d’Amérique, depuis la première année du L.M.D. juqu’au Master et au doctorat. L’enseignement dispensé comprend un volet classique et méthodologique sur les quatre grandes périodes historiques (antiquité, moyen-âge, période moderne et histoire contemporaine) et une formation, répartie sur tout le cursus, en archéologie, patrimoine et histoire du monde caraïbe, débouchant sur une initiation à la recherche et des travaux effectifs proposés aux doctorants portant sur l’histoire antillaise et caribéenne.</p>
+	</div>
+	<div id="news" class="sous_barre">
+		<h1>Les dernières nouvelles</h1>
+			<p>Le département d'histoire de l'université des Antilles et de la Guyane et l'équipe de recherche AIHP Géode tiennent à manifester toute leur sympathie au peuple haïtien endeuillé, et particulièrement aux étudiants qu'elle accueille et aux collègues haïtiens avec qui ils travaillent ordinairement.</p>	
+	</div>	
+	<div id="loginUser" >
+		<h1>Accès réservé</h1>
+		<% if logged_in? %>
+		<p>Accedez à votre <%= link_to	'espace personnel', user_path(:id => current_user) %>  ou <%= link_to	'déconnectez', session_path(session), :method => :delete %> </p>
+		<% else %>
+		<% form_tag sessions_path do -%>
+		<div class="setting">
+			<label class="field" for="login">Login : </label><%= text_field_tag 'login' %>
+		</div>
+		<div class="setting">
+			<label class="field" for="password">Password:</label><%= password_field_tag 'password' %>
+		</div>
+		<div class="controls">
+			<input class="submit" type="image" src="../images/button_submit.gif" value="Submit" alt="Submit" />
+			<label class="field">Se souvenir de Moi : </label> <%= check_box_tag 'remember_me' %>
+		</div>
+		<% end -%>
+		<% end %>
+	</div>

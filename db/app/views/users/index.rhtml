@@ -1,0 +1,9 @@
+<%= link_to 'ajouter un nouvel utilisateur', new_user_url %>
+<br/>
+<ul>
+<% @users.each do |t| %>
+	<li><%= h(t.login) %> <%= link_to 'editer', edit_user_url(:id => t)  %> 
+	<%= link_to image_tag ('trash.gif'), user_url (:id => t), :method  => :delete %>
+	</li>
+<% end %>
+</ul>

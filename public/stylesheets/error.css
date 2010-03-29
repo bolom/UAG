@@ -1,0 +1,38 @@
+#boxbg {
+	background: #ccc;
+	width: 66%;
+	margin: 0 auto;
+	position: relative;
+	left: .5em;
+	top: .5em;
+	}
+
+#box {
+	border: 1px solid #cdcdcd;
+	background: #fff;
+	padding: 1em 2em;
+	position: relative;
+	top: -.5em;
+	left: -.5em;
+	text-align: left;
+	}
+	
+	.list-desc {
+		font-weight: bold;
+	}
+
+	.blue {
+		color: #0000FF;
+	}
+
+	.red {
+		color: #FF0000
+	}
+
+	.green {
+		color: #359946;
+	}
+
+	.orange {
+		color: #cc9933;
+	}

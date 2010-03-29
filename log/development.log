@@ -1,0 +1,616 @@
+/!\ FAILSAFE /!\  Mon Mar 29 17:40:16 -0400 2010
+  Status: 500 Internal Server Error
+  uninitialized constant PagesController
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:279:in `load_missing_constant'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:468:in `const_missing'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:480:in `const_missing'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/inflector.rb:285:in `constantize'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/inflector.rb:284:in `each'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/inflector.rb:284:in `constantize'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Mar 29 17:41:01 -0400 2010
+  Status: 500 Internal Server Error
+  No route matches "/users" with {:method=>:get}
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.000244)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000142)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.019291)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.006416)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000211)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEnseignements (1)
+  [4;36;1mSQL (0.002537)[0m   [0;1mCREATE TABLE "enseignements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "libelle" varchar(255), "volume" varchar(255), "heures_perso" varchar(255), "ects" varchar(255), "question" text, "objectif" text, "bibliographie" text, "evaluation" text, "remarque" text, "plan" text) [0m
+  [4;35;1mSQL (0.002329)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to CreateEnseignants (2)
+  [4;36;1mSQL (0.002050)[0m   [0;1mCREATE TABLE "enseignants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nom" varchar(255), "prenom" varchar(255), "photo" varchar(255), "email" varchar(255), "telephone" varchar(255), "recherche" text, "publication" text, "personal" text) [0m
+  [4;35;1mSQL (0.001635)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('2')[0m
+Migrating to CreateContributions (3)
+  [4;36;1mSQL (0.001756)[0m   [0;1mCREATE TABLE "contributions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "enseignement_id" number, "enseignant_id" number) [0m
+  [4;35;1mSQL (0.002409)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('3')[0m
+Migrating to AddTheme (4)
+  [4;36;1mSQL (0.002133)[0m   [0;1mALTER TABLE "enseignements" ADD "contenu" text[0m
+  [4;35;1mSQL (0.035688)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002445)[0m   [0;1mALTER TABLE "enseignements" ADD "type" varchar(255)[0m
+  [4;35;1mSQL (0.005273)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.041679)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('4')[0m
+Migrating to AddCycles (5)
+  [4;35;1mSQL (0.022981)[0m   [0mALTER TABLE "enseignements" ADD "cycle" varchar(255)[0m
+  [4;36;1mSQL (0.021455)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002446)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('5')[0m
+Migrating to AddUpdated (6)
+  [4;36;1mSQL (0.002279)[0m   [0;1mALTER TABLE "enseignements" ADD "updated_at" datetime[0m
+  [4;35;1mSQL (0.005882)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002927)[0m   [0;1mALTER TABLE "enseignements" ADD "modifier_par" varchar(255)[0m
+  [4;35;1mSQL (0.005620)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002469)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('6')[0m
+Migrating to AddType (7)
+  [4;35;1mSQL (0.002139)[0m   [0mALTER TABLE "enseignants" ADD "groupe" varchar(255)[0m
+  [4;36;1mSQL (0.006018)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.003181)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('7')[0m
+Migrating to AddFonction (8)
+  [4;36;1mSQL (0.002434)[0m   [0;1mALTER TABLE "enseignants" ADD "fonction" varchar(255)[0m
+  [4;35;1mSQL (0.004786)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002135)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('8')[0m
+Migrating to CreateUsers (9)
+  [4;35;1mSQL (0.000364)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.002301)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime) [0m
+  [4;35;1mSQL (0.002360)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('9')[0m
+Migrating to AddSessions (10)
+  [4;36;1mSQL (0.002982)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255), "data" text, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.002488)[0m   [0mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;36;1mSQL (0.002514)[0m   [0;1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;35;1mSQL (0.003584)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('10')[0m
+Migrating to CreateDocuments (11)
+  [4;36;1mSQL (0.002877)[0m   [0;1mCREATE TABLE "documents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_type" varchar(255), "filename" varchar(255), "size" integer, "parent_id" integer, "thumbnail" varchar(255), "user_id" integer, "db_file_id" integer) [0m
+  [4;35;1mSQL (0.002560)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('11')[0m
+Migrating to AddPublic (12)
+  [4;36;1mSQL (0.002183)[0m   [0;1mALTER TABLE "users" ADD "is_admin" boolean[0m
+  [4;35;1mSQL (0.006282)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002443)[0m   [0;1mALTER TABLE "users" ADD "user_id" integer[0m
+  [4;35;1mSQL (0.005888)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002546)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('12')[0m
+Migrating to CreateMailings (13)
+  [4;35;1mSQL (0.002047)[0m   [0mCREATE TABLE "couriels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "user_id" integer) [0m
+  [4;36;1mSQL (0.002116)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('13')[0m
+Migrating to AddEnseignant (14)
+  [4;35;1mSQL (0.002275)[0m   [0mALTER TABLE "users" ADD "enseignant_id" integer[0m
+  [4;36;1mSQL (0.007357)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002301)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('14')[0m
+Migrating to AddAdresse (15)
+  [4;36;1mSQL (0.001936)[0m   [0;1mALTER TABLE "enseignants" ADD "adresse" varchar(255)[0m
+  [4;35;1mSQL (0.006977)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.001967)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('15')[0m
+Migrating to AddAnnneLieu (16)
+  [4;35;1mSQL (0.002523)[0m   [0mALTER TABLE "enseignements" ADD "annee" varchar(255)[0m
+  [4;36;1mSQL (0.006591)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002268)[0m   [0mALTER TABLE "enseignements" ADD "parcour_id" integer[0m
+  [4;36;1mSQL (0.008214)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002970)[0m   [0mALTER TABLE "enseignements" ADD "adresse" varchar(255)[0m
+  [4;36;1mSQL (0.006730)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002494)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('16')[0m
+Migrating to CreateParcours (17)
+  [4;36;1mSQL (0.002388)[0m   [0;1mCREATE TABLE "parcours" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255)) [0m
+  [4;35;1mSQL (0.002204)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('17')[0m
+Migrating to Groupement (18)
+  [4;36;1mSQL (0.002585)[0m   [0;1mCREATE TABLE "groupements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "groupe_id" integer, "enseignement_id" integer) [0m
+  [4;35;1mSQL (0.002421)[0m   [0mCREATE TABLE "groupes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "type_groupe" varchar(255)) [0m
+  [4;36;1mSQL (0.000848)[0m   [0;1mCREATE TEMPORARY TABLE "altered_enseignements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "libelle" varchar(255), "volume" varchar(255), "heures_perso" varchar(255), "ects" varchar(255), "question" text, "objectif" text, "bibliographie" text, "evaluation" text, "remarque" text, "plan" text, "contenu" text, "type" varchar(255), "cycle" varchar(255), "updated_at" datetime, "modifier_par" varchar(255), "annee" varchar(255), "parcour_id" integer, "adresse" varchar(255)) [0m
+  [4;35;1mSQL (0.000074)[0m   [0mPRAGMA index_list("enseignements")[0m
+  [4;36;1mSQL (0.000881)[0m   [0;1mDROP TABLE "enseignements"[0m
+  [4;35;1mSQL (0.000262)[0m   [0mCREATE TABLE "enseignements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "libelle" varchar(255), "volume" varchar(255), "heures_perso" varchar(255), "ects" varchar(255), "question" text, "objectif" text, "bibliographie" text, "evaluation" text, "remarque" text, "plan" text, "contenu" text, "type" varchar(255), "updated_at" datetime, "modifier_par" varchar(255), "annee" varchar(255), "parcour_id" integer, "adresse" varchar(255)) [0m
+  [4;36;1mSQL (0.000041)[0m   [0;1mPRAGMA index_list("altered_enseignements")[0m
+  [4;35;1mSQL (0.020882)[0m   [0mDROP TABLE "altered_enseignements"[0m
+  [4;36;1mSQL (0.009775)[0m   [0;1mCREATE TEMPORARY TABLE "altered_enseignements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "libelle" varchar(255), "volume" varchar(255), "heures_perso" varchar(255), "ects" varchar(255), "question" text, "objectif" text, "bibliographie" text, "evaluation" text, "remarque" text, "plan" text, "contenu" text, "type" varchar(255), "updated_at" datetime, "modifier_par" varchar(255), "annee" varchar(255), "parcour_id" integer, "adresse" varchar(255)) [0m
+  [4;35;1mSQL (0.000110)[0m   [0mPRAGMA index_list("enseignements")[0m
+  [4;36;1mSQL (0.000559)[0m   [0;1mDROP TABLE "enseignements"[0m
+  [4;35;1mSQL (0.000265)[0m   [0mCREATE TABLE "enseignements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "libelle" varchar(255), "volume" varchar(255), "heures_perso" varchar(255), "ects" varchar(255), "question" text, "objectif" text, "bibliographie" text, "evaluation" text, "remarque" text, "plan" text, "contenu" text, "type" varchar(255), "updated_at" datetime, "modifier_par" varchar(255), "annee" varchar(255), "adresse" varchar(255)) [0m
+  [4;36;1mSQL (0.000043)[0m   [0;1mPRAGMA index_list("altered_enseignements")[0m
+  [4;35;1mSQL (0.000246)[0m   [0mDROP TABLE "altered_enseignements"[0m
+  [4;36;1mSQL (0.002114)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('18')[0m
+Migrating to RemoveAdress (19)
+  [4;35;1mSQL (0.000431)[0m   [0mCREATE TEMPORARY TABLE "altered_enseignements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "libelle" varchar(255), "volume" varchar(255), "heures_perso" varchar(255), "ects" varchar(255), "question" text, "objectif" text, "bibliographie" text, "evaluation" text, "remarque" text, "plan" text, "contenu" text, "type" varchar(255), "updated_at" datetime, "modifier_par" varchar(255), "annee" varchar(255), "adresse" varchar(255)) [0m
+  [4;36;1mSQL (0.000052)[0m   [0;1mPRAGMA index_list("enseignements")[0m
+  [4;35;1mSQL (0.000512)[0m   [0mDROP TABLE "enseignements"[0m
+  [4;36;1mSQL (0.000239)[0m   [0;1mCREATE TABLE "enseignements" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "libelle" varchar(255), "volume" varchar(255), "heures_perso" varchar(255), "ects" varchar(255), "question" text, "objectif" text, "bibliographie" text, "evaluation" text, "remarque" text, "plan" text, "contenu" text, "type" varchar(255), "updated_at" datetime, "modifier_par" varchar(255), "annee" varchar(255)) [0m
+  [4;35;1mSQL (0.000043)[0m   [0mPRAGMA index_list("altered_enseignements")[0m
+  [4;36;1mSQL (0.000323)[0m   [0;1mDROP TABLE "altered_enseignements"[0m
+  [4;35;1mSQL (0.001870)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('19')[0m
+Migrating to GlobalizeAddTranslatedFieldsForEnseignant (20)
+  [4;36;1mSQL (0.002337)[0m   [0;1mALTER TABLE "enseignants" ADD "recherche_en" text DEFAULT ''[0m
+  [4;35;1mSQL (0.053177)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002802)[0m   [0;1mALTER TABLE "enseignants" ADD "publication_en" text DEFAULT ''[0m
+  [4;35;1mSQL (0.006903)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002437)[0m   [0;1mALTER TABLE "enseignants" ADD "personal_en" text DEFAULT ''[0m
+  [4;35;1mSQL (0.007402)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002499)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20')[0m
+Migrating to GlobalizeAddTranslatedFieldsForEnseignementEnseignant (21)
+  [4;35;1mSQL (0.002253)[0m   [0mALTER TABLE "enseignements" ADD "libelle_en" text DEFAULT ''[0m
+  [4;36;1mSQL (0.007728)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.003128)[0m   [0mALTER TABLE "enseignements" ADD "contenu_en" varchar(255) DEFAULT ''[0m
+  [4;36;1mSQL (0.008450)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.003829)[0m   [0mALTER TABLE "enseignements" ADD "question_en" text DEFAULT ''[0m
+  [4;36;1mSQL (0.011886)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.033328)[0m   [0mALTER TABLE "enseignements" ADD "objectif_en" text DEFAULT ''[0m
+  [4;36;1mSQL (0.021909)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.017681)[0m   [0mALTER TABLE "enseignements" ADD "plan_en" text DEFAULT ''[0m
+  [4;36;1mSQL (0.024989)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.018154)[0m   [0mALTER TABLE "enseignements" ADD "bibliographie_en" text DEFAULT ''[0m
+  [4;36;1mSQL (0.026380)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.030817)[0m   [0mALTER TABLE "enseignements" ADD "evaluation_en" text DEFAULT ''[0m
+  [4;36;1mSQL (0.046313)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.018501)[0m   [0mALTER TABLE "enseignements" ADD "remarque_en" text DEFAULT ''[0m
+  [4;36;1mSQL (0.048803)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.029093)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('21')[0m
+Migrating to AddPhoto (22)
+  [4;36;1mSQL (0.014892)[0m   [0;1mALTER TABLE "enseignants" ADD "parent_id" integer[0m
+  [4;35;1mSQL (0.032588)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002968)[0m   [0;1mALTER TABLE "enseignants" ADD "content_type" varchar(255)[0m
+  [4;35;1mSQL (0.007875)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.008773)[0m   [0;1mALTER TABLE "enseignants" ADD "filename" varchar(255)[0m
+  [4;35;1mSQL (0.007385)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002536)[0m   [0;1mALTER TABLE "enseignants" ADD "thumbnail" varchar(255)[0m
+  [4;35;1mSQL (0.007325)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002608)[0m   [0;1mALTER TABLE "enseignants" ADD "size" integer[0m
+  [4;35;1mSQL (0.006707)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002039)[0m   [0;1mALTER TABLE "enseignants" ADD "width" integer[0m
+  [4;35;1mSQL (0.007472)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002449)[0m   [0;1mALTER TABLE "enseignants" ADD "height" integer[0m
+  [4;35;1mSQL (0.006801)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002679)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('22')[0m
+Migrating to AddTraductionGroupe (23)
+  [4;35;1mSQL (0.003470)[0m   [0mALTER TABLE "groupes" ADD "title_en" varchar(255) DEFAULT 'text1'[0m
+  [4;36;1mSQL (0.007532)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002294)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('23')[0m
+Migrating to CreateUniversites (24)
+  [4;36;1mSQL (0.002736)[0m   [0;1mCREATE TABLE "universites" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "students" varchar(255), "definition" text, "remarque" text, "content_type" varchar(255), "filename" varchar(255), "thumbnail" varchar(255), "size" integer, "width" integer, "height" integer, "link" varchar(255)) [0m
+  [4;35;1mSQL (0.002529)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('24')[0m
+Migrating to GlobalizeAddTranslatedFieldsForGroupeUniversiteEnseignementEnseignant (25)
+  [4;36;1mSQL (0.002155)[0m   [0;1mALTER TABLE "universites" ADD "name_en" varchar(255) DEFAULT ''[0m
+  [4;35;1mSQL (0.008162)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002561)[0m   [0;1mALTER TABLE "universites" ADD "definition_en" text DEFAULT ''[0m
+  [4;35;1mSQL (0.009043)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002693)[0m   [0;1mALTER TABLE "universites" ADD "students_en" varchar(255) DEFAULT ''[0m
+  [4;35;1mSQL (0.008226)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.003250)[0m   [0;1mALTER TABLE "universites" ADD "remarque_en" text DEFAULT ''[0m
+  [4;35;1mSQL (0.007365)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002293)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('25')[0m
+Migrating to AddFonctionEn (26)
+  [4;35;1mSQL (0.002372)[0m   [0mALTER TABLE "enseignants" ADD "fonction_en" varchar(255)[0m
+  [4;36;1mSQL (0.008857)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002632)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('26')[0m
+Migrating to AddLinkEn (27)
+  [4;36;1mSQL (0.002285)[0m   [0;1mALTER TABLE "universites" ADD "link_en" varchar(255)[0m
+  [4;35;1mSQL (0.007965)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002193)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('27')[0m
+Migrating to AddRole (28)
+  [4;35;1mSQL (0.002460)[0m   [0mALTER TABLE "users" ADD "role" varchar(255)[0m
+  [4;36;1mSQL (0.007942)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.000411)[0m   [0mCREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime, "is_admin" boolean, "user_id" integer, "enseignant_id" integer, "role" varchar(255)) [0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.000976)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.000417)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime, "user_id" integer, "enseignant_id" integer, "role" varchar(255)) [0m
+  [4;35;1mSQL (0.000044)[0m   [0mPRAGMA index_list("altered_users")[0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mDROP TABLE "altered_users"[0m
+  [4;35;1mSQL (0.002172)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('28')[0m
+Migrating to CreateMaillingLists (29)
+  [4;36;1mSQL (0.002848)[0m   [0;1mCREATE TABLE "mailling_lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "label" varchar(255)) [0m
+  [4;35;1mSQL (0.002331)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('29')[0m
+Migrating to RemoveUserCourrielAddMaillingList (30)
+  [4;36;1mSQL (0.000245)[0m   [0;1mCREATE TEMPORARY TABLE "altered_couriels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "user_id" integer) [0m
+  [4;35;1mSQL (0.000041)[0m   [0mPRAGMA index_list("couriels")[0m
+  [4;36;1mSQL (0.000522)[0m   [0;1mDROP TABLE "couriels"[0m
+  [4;35;1mSQL (0.000235)[0m   [0mCREATE TABLE "couriels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255)) [0m
+  [4;36;1mSQL (0.000041)[0m   [0;1mPRAGMA index_list("altered_couriels")[0m
+  [4;35;1mSQL (0.000210)[0m   [0mDROP TABLE "altered_couriels"[0m
+  [4;36;1mSQL (0.002381)[0m   [0;1mALTER TABLE "couriels" ADD "mailling_list_id" integer[0m
+  [4;35;1mSQL (0.007993)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002442)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('30')[0m
+Migrating to CreateGroupeDocuments (31)
+  [4;35;1mSQL (0.003542)[0m   [0mCREATE TABLE "groupe_documents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "label" varchar(255)) [0m
+  [4;36;1mSQL (0.002236)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('31')[0m
+Migrating to AddGroupeDocumentId (32)
+  [4;35;1mSQL (0.000280)[0m   [0mCREATE TEMPORARY TABLE "altered_documents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_type" varchar(255), "filename" varchar(255), "size" integer, "parent_id" integer, "thumbnail" varchar(255), "user_id" integer, "db_file_id" integer) [0m
+  [4;36;1mSQL (0.000044)[0m   [0;1mPRAGMA index_list("documents")[0m
+  [4;35;1mSQL (0.000614)[0m   [0mDROP TABLE "documents"[0m
+  [4;36;1mSQL (0.000296)[0m   [0;1mCREATE TABLE "documents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content_type" varchar(255), "filename" varchar(255), "size" integer, "parent_id" integer, "thumbnail" varchar(255), "db_file_id" integer) [0m
+  [4;35;1mSQL (0.000042)[0m   [0mPRAGMA index_list("altered_documents")[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mDROP TABLE "altered_documents"[0m
+  [4;35;1mSQL (0.002121)[0m   [0mALTER TABLE "documents" ADD "groupe_document_id" integer DEFAULT 0[0m
+  [4;36;1mSQL (0.007947)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002613)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('32')[0m
+Migrating to AddDocumentId (33)
+  [4;36;1mSQL (0.001890)[0m   [0;1mALTER TABLE "enseignements" ADD "groupe_document_id" integer[0m
+  [4;35;1mSQL (0.009059)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002881)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('33')[0m
+Migrating to AddLabel (34)
+  [4;35;1mSQL (0.002227)[0m   [0mALTER TABLE "groupe_documents" ADD "label_en" varchar(255) DEFAULT 'NULL'[0m
+  [4;36;1mSQL (0.008369)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002407)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('34')[0m
+Migrating to AddDescription (35)
+  [4;36;1mSQL (0.002310)[0m   [0;1mALTER TABLE "documents" ADD "description" varchar(255)[0m
+  [4;35;1mSQL (0.008398)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002817)[0m   [0;1mALTER TABLE "documents" ADD "description_en" varchar(255)[0m
+  [4;35;1mSQL (0.050119)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002721)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('35')[0m
+Migrating to Add (36)
+  [4;35;1mSQL (0.002474)[0m   [0mALTER TABLE "enseignements" ADD "last_udptated" varchar(255)[0m
+  [4;36;1mSQL (0.009014)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (0.002727)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('36')[0m
+  [4;36;1mSQL (0.000637)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001019)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000484)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000043)[0m   [0mPRAGMA index_list("contributions")[0m
+  [4;36;1mSQL (0.000041)[0m   [0;1mPRAGMA index_list("couriels")[0m
+  [4;35;1mSQL (0.000044)[0m   [0mPRAGMA index_list("documents")[0m
+  [4;36;1mSQL (0.000051)[0m   [0;1mPRAGMA index_list("enseignants")[0m
+  [4;35;1mSQL (0.000049)[0m   [0mPRAGMA index_list("enseignements")[0m
+  [4;36;1mSQL (0.000041)[0m   [0;1mPRAGMA index_list("groupe_documents")[0m
+  [4;35;1mSQL (0.000042)[0m   [0mPRAGMA index_list("groupements")[0m
+  [4;36;1mSQL (0.000079)[0m   [0;1mPRAGMA index_list("groupes")[0m
+  [4;35;1mSQL (0.000121)[0m   [0mPRAGMA index_list("mailling_lists")[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mPRAGMA index_list("parcours")[0m
+  [4;35;1mSQL (0.001244)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.000195)[0m   [0;1mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;35;1mSQL (0.000115)[0m   [0mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mPRAGMA index_list("universites")[0m
+  [4;35;1mSQL (0.000075)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-29 17:47:25) [GET]
+  Session ID: 0c19010be040896de8f95d6d5da7a99f
+  Parameters: {"action"=>"index", "controller"=>"Pages"}
+
+
+ActiveRecord::StatementInvalid (Could not find table 'globalize_languages'):
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/sqlite3_adapter.rb:29:in `table_structure'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/core_ext/object/misc.rb:28:in `returning'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/sqlite3_adapter.rb:28:in `table_structure'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/sqlite_adapter.rb:189:in `columns'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/base.rb:1149:in `columns'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/base.rb:1162:in `column_names'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/base.rb:1175:in `column_methods_hash'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/base.rb:1719:in `all_attributes_exists?'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/sqlite3_adapter.rb:29:in `all?'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/base.rb:1719:in `each'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/base.rb:1719:in `all?'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/base.rb:1719:in `all_attributes_exists?'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/base.rb:1618:in `method_missing'
+    /vendor/plugins/globalize/lib/globalize/models/language.rb:37:in `pick'
+    /vendor/plugins/globalize/lib/globalize/localization/locale.rb:124:in `initialize'
+    /vendor/plugins/globalize/lib/globalize/localization/locale.rb:39:in `new'
+    /vendor/plugins/globalize/lib/globalize/localization/locale.rb:39:in `set'
+    /app/controllers/application.rb:19:in `set_locale'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/callbacks.rb:173:in `send'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/callbacks.rb:173:in `evaluate_method'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/callbacks.rb:161:in `call'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:191:in `call'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:591:in `run_before_filters'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:577:in `call_filters'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Users/bolo/.gem/ruby/1.8/gems/activerecord-2.1.1/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `send'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/session_management.rb:130:in `process'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:389:in `process'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    /Users/bolo/.gem/ruby/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /Users/bolo/.gem/ruby/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    /Users/bolo/.gem/ruby/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/bolo/.gem/ruby/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+  [4;36;1mSQL (0.000209)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.001044)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.003044)[0m   [0;1mCREATE TABLE "globalize_countries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "code" varchar(2), "english_name" varchar(255), "date_format" varchar(255), "currency_format" varchar(255), "currency_code" varchar(3), "thousands_sep" varchar(2), "decimal_sep" varchar(2), "currency_decimal_sep" varchar(2), "number_grouping_scheme" varchar(255)) [0m
+  [4;35;1mSQL (0.003065)[0m   [0mCREATE INDEX "index_globalize_countries_on_code" ON "globalize_countries" ("code")[0m
+  [4;36;1mSQL (0.000691)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.047232)[0m   [0mCREATE TABLE "globalize_translations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "tr_key" varchar(255), "table_name" varchar(255), "item_id" integer, "facet" varchar(255), "built_in" boolean DEFAULT 't', "language_id" integer, "pluralization_index" integer, "text" text, "namespace" varchar(255)) [0m
+  [4;36;1mSQL (0.003694)[0m   [0;1mCREATE INDEX "index_globalize_translations_on_tr_key_and_language_id" ON "globalize_translations" ("tr_key", "language_id")[0m
+  [4;35;1mSQL (0.002488)[0m   [0mCREATE INDEX "globalize_translations_table_name_and_item_and_language" ON "globalize_translations" ("table_name", "item_id", "language_id")[0m
+  [4;36;1mSQL (0.000641)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002376)[0m   [0mCREATE TABLE "globalize_languages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "iso_639_1" varchar(2), "iso_639_2" varchar(3), "iso_639_3" varchar(3), "rfc_3066" varchar(255), "english_name" varchar(255), "english_name_locale" varchar(255), "english_name_modifier" varchar(255), "native_name" varchar(255), "native_name_locale" varchar(255), "native_name_modifier" varchar(255), "macro_language" boolean, "direction" varchar(255), "pluralization" varchar(255), "scope" varchar(1)) [0m
+  [4;36;1mSQL (0.002316)[0m   [0;1mCREATE INDEX "index_globalize_languages_on_iso_639_1" ON "globalize_languages" ("iso_639_1")[0m
+  [4;35;1mSQL (0.003445)[0m   [0mCREATE INDEX "index_globalize_languages_on_iso_639_2" ON "globalize_languages" ("iso_639_2")[0m
+  [4;36;1mSQL (0.002701)[0m   [0;1mCREATE INDEX "index_globalize_languages_on_iso_639_3" ON "globalize_languages" ("iso_639_3")[0m
+  [4;35;1mSQL (0.003238)[0m   [0mCREATE INDEX "index_globalize_languages_on_rfc_3066" ON "globalize_languages" ("rfc_3066")[0m
+  [4;36;1mSQL (0.001430)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001191)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEnseignements (1)
+Migrating to CreateEnseignants (2)
+Migrating to CreateContributions (3)
+Migrating to AddTheme (4)
+Migrating to AddCycles (5)
+Migrating to AddUpdated (6)
+Migrating to AddType (7)
+Migrating to AddFonction (8)
+Migrating to CreateUsers (9)
+Migrating to AddSessions (10)
+Migrating to CreateDocuments (11)
+Migrating to AddPublic (12)
+Migrating to CreateMailings (13)
+Migrating to AddEnseignant (14)
+Migrating to AddAdresse (15)
+Migrating to AddAnnneLieu (16)
+Migrating to CreateParcours (17)
+Migrating to Groupement (18)
+Migrating to RemoveAdress (19)
+Migrating to GlobalizeAddTranslatedFieldsForEnseignant (20)
+Migrating to GlobalizeAddTranslatedFieldsForEnseignementEnseignant (21)
+Migrating to AddPhoto (22)
+Migrating to AddTraductionGroupe (23)
+Migrating to CreateUniversites (24)
+Migrating to GlobalizeAddTranslatedFieldsForGroupeUniversiteEnseignementEnseignant (25)
+Migrating to AddFonctionEn (26)
+Migrating to AddLinkEn (27)
+Migrating to AddRole (28)
+Migrating to CreateMaillingLists (29)
+Migrating to RemoveUserCourrielAddMaillingList (30)
+Migrating to CreateGroupeDocuments (31)
+Migrating to AddGroupeDocumentId (32)
+Migrating to AddDocumentId (33)
+Migrating to AddLabel (34)
+Migrating to AddDescription (35)
+Migrating to Add (36)
+  [4;36;1mSQL (0.000140)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000603)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001049)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000585)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000043)[0m   [0;1mPRAGMA index_list("contributions")[0m
+  [4;35;1mSQL (0.000042)[0m   [0mPRAGMA index_list("couriels")[0m
+  [4;36;1mSQL (0.000043)[0m   [0;1mPRAGMA index_list("documents")[0m
+  [4;35;1mSQL (0.000046)[0m   [0mPRAGMA index_list("enseignants")[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mPRAGMA index_list("enseignements")[0m
+  [4;35;1mSQL (0.000154)[0m   [0mPRAGMA index_list("globalize_countries")[0m
+  [4;36;1mSQL (0.000112)[0m   [0;1mPRAGMA index_info('index_globalize_countries_on_code')[0m
+  [4;35;1mSQL (0.000242)[0m   [0mPRAGMA index_list("globalize_languages")[0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mPRAGMA index_info('index_globalize_languages_on_rfc_3066')[0m
+  [4;35;1mSQL (0.000100)[0m   [0mPRAGMA index_info('index_globalize_languages_on_iso_639_3')[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mPRAGMA index_info('index_globalize_languages_on_iso_639_2')[0m
+  [4;35;1mSQL (0.000104)[0m   [0mPRAGMA index_info('index_globalize_languages_on_iso_639_1')[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mPRAGMA index_list("globalize_translations")[0m
+  [4;35;1mSQL (0.000190)[0m   [0mPRAGMA index_info('globalize_translations_table_name_and_item_and_language')[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mPRAGMA index_info('index_globalize_translations_on_tr_key_and_language_id')[0m
+  [4;35;1mSQL (0.000049)[0m   [0mPRAGMA index_list("groupe_documents")[0m
+  [4;36;1mSQL (0.000041)[0m   [0;1mPRAGMA index_list("groupements")[0m
+  [4;35;1mSQL (0.000043)[0m   [0mPRAGMA index_list("groupes")[0m
+  [4;36;1mSQL (0.000050)[0m   [0;1mPRAGMA index_list("mailling_lists")[0m
+  [4;35;1mSQL (0.000049)[0m   [0mPRAGMA index_list("parcours")[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.000110)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.000044)[0m   [0mPRAGMA index_list("universites")[0m
+  [4;36;1mSQL (0.000043)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-29 17:49:30) [GET]
+  Session ID: 0c19010be040896de8f95d6d5da7a99f
+  Parameters: {"action"=>"index", "controller"=>"Pages"}
+  [4;36;1mGlobalize::Language Load (0.000212)[0m   [0;1mSELECT * FROM "globalize_languages" WHERE ("globalize_languages"."rfc_3066" = 'fr-FR') LIMIT 1[0m
+  [4;35;1mGlobalize::Language Load (0.000347)[0m   [0mSELECT * FROM "globalize_languages" WHERE ("globalize_languages"."iso_639_1" = 'fr') LIMIT 1[0m
+  [4;36;1mGlobalize::Country Load (0.000371)[0m   [0;1mSELECT * FROM "globalize_countries" WHERE ("globalize_countries"."code" = 'FR') LIMIT 1[0m
+Redirected to http://localhost:3000/fr/pages
+Filter chain halted as [:set_locale] rendered_or_redirected.
+Completed in 0.01150 (86 reqs/sec) | DB: 0.00117 (10%) | 302 Found [http://localhost/]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2010-03-29 17:49:31) [GET]
+  Session ID: 0c19010be040896de8f95d6d5da7a99f
+  Parameters: {"action"=>"index", "controller"=>"pages", "locale"=>"fr"}
+  [4;35;1mGlobalize::Language Load (0.000398)[0m   [0mSELECT * FROM "globalize_languages" WHERE ("globalize_languages"."iso_639_1" = 'fr') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/index
+  [4;36;1mGlobalize::ViewTranslation Load (0.000245)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Département d''Histoire de l''Université des Antilles et de la Guyane' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000593)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Département d''Histoire de l''Université des Antilles et de la Guyane', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000255)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Département d''Histoire de l''U.A.G' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000433)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Département d''Histoire de l''U.A.G', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+Rendered pages/_index_fr (0.00638)
+  [4;36;1mGlobalize::ViewTranslation Load (0.000519)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Département d''Histoire de l''U.A.G' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Load (0.000206)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'accueil' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;36;1mGlobalize::ViewTranslation Create (0.000388)[0m   [0;1mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('accueil', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;35;1mGlobalize::ViewTranslation Load (0.000385)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'département' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;36;1mGlobalize::ViewTranslation Create (0.000405)[0m   [0;1mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('département', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;35;1mGlobalize::ViewTranslation Load (0.000251)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'formations' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;36;1mGlobalize::ViewTranslation Create (0.000377)[0m   [0;1mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('formations', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;35;1mGlobalize::ViewTranslation Load (0.000275)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'enseignants' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;36;1mGlobalize::ViewTranslation Create (0.000405)[0m   [0;1mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('enseignants', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;35;1mGlobalize::ViewTranslation Load (0.000308)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'actualités' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;36;1mGlobalize::ViewTranslation Create (0.000378)[0m   [0;1mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('actualités', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;35;1mGlobalize::ViewTranslation Load (0.000240)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'recherche' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;36;1mGlobalize::ViewTranslation Create (0.000378)[0m   [0;1mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('recherche', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;35;1mGlobalize::ViewTranslation Load (0.000291)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'échanges' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;36;1mGlobalize::ViewTranslation Create (0.000383)[0m   [0;1mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('échanges', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;35;1mGlobalize::ViewTranslation Load (0.000429)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'accueil' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000154)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Département' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000378)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Département', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000221)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Documents' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000375)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Documents', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000372)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Actualités' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000512)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Actualités', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000251)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Formations' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000441)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Formations', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000294)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Licence' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000403)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Licence', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000216)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Master &amp; Doctorat' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000414)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Master &amp; Doctorat', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000264)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Personnel' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000385)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Personnel', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000232)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Enseignants-Chercheurs du département' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000374)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Enseignants-Chercheurs du département', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000259)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Intervenants externes' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000384)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Intervenants externes', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000237)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Administratifs' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000627)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Administratifs', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000227)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Recherche' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000416)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Recherche', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000251)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Groupe A.I.H.P.' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000480)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Groupe A.I.H.P.', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000342)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Archéologie' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000487)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Archéologie', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000319)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Échanges' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000404)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Échanges', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000302)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Étudiants européens et internationaux' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000471)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Étudiants européens et internationaux', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000287)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Étudiants de l’UAG' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000401)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Étudiants de l’UAG', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000298)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Échanges enseignants' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000621)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Échanges enseignants', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000299)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Universités partenaires' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000389)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Universités partenaires', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+  [4;36;1mGlobalize::ViewTranslation Load (0.000262)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Témoignages' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
+  [4;35;1mGlobalize::ViewTranslation Create (0.000478)[0m   [0mINSERT INTO "globalize_translations" ("tr_key", "namespace", "text", "facet", "type", "language_id", "table_name", "built_in", "item_id", "pluralization_index") VALUES('Témoignages', NULL, NULL, NULL, 'ViewTranslation', 1930, NULL, 't', NULL, 1)[0m
+Completed in 0.34071 (2 reqs/sec) | Rendering: 0.31619 (92%) | DB: 0.02211 (6%) | 200 OK [http://localhost/fr/pages]

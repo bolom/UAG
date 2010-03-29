@@ -1,0 +1,11 @@
+<%= render :partial => 'menu_formation' %>
+<div id="contenu">
+	<%= image_tag "campus.jpg", :class => "right"%>
+	<h3><%= @titre.upcase  %></h3>
+	<% if logged_in?  %>
+		<%= render :partial => 'liste_enseignants_admin' %>
+		<% else -%>
+		<%= render :partial => 'liste_enseignants_public' %>
+	<% end %>
+	<hr/>	
+</div>

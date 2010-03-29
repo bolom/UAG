@@ -1,0 +1,79 @@
+<%= render :partial => 'shared/menu_formation' %>
+<% content_for :stylesheet do %>
+<style type="text/css">
+ul li {
+	list-style-type: disc;
+}
+</style>
+<% end %>
+<div id="contenu" >
+	<h1><%=h @enseignement.libelle %>
+		</h1>
+	<ul>
+		<li style="list-style-type: none;"><b><%= "Volume Horaire".t %> :</b> <%=h @enseignement.volume %></li>
+		<li style="list-style-type: none;"><b><%= "Travail personnel de l'étudiant".t %> :</b> <%=h @enseignement.heures_perso %></li>
+		<li style="list-style-type: none;"><b><%= "ECTS".t %> :</b> <%=h @enseignement.ects %></li>
+		<li style="list-style-type: none;"><b><%= ("enseignants".t).capitalize %> :</b> 
+			<% @enseignants.each_with_index do | enseignant, index | %>
+			<% if  index > 0 %>,<% end %>
+			<%= link_to (enseignant.prenom + " " +enseignant.nom.upcase), enseignant_path(:id => enseignant) %>
+			<% end %>
+		</li> 
+		<%= render :partial => 'liste_parcours' %>
+	</ul>
+	<% if is_admin?  %>
+	<% form_for(:groupement, :url => groupements_path) do |f| %>
+		<%= f.select :groupe_id , @groupes.collect {|c| [ c.title, c.id ] }%>
+		<%= f.hidden_field  :enseignement_id,  :value => @enseignement.id %>
+		<input id="groupement_type" name="groupement[type]" type="hidden" value="enseignement" />
+		<%= image_submit_tag('/images/add_petit.jpg') %>
+	<% end %>
+	<% end %>
+	<% unless @enseignement.contenu.blank? %>
+	<h3><%= "Contenu".t %></h3>
+	<%= RedCloth.new(@enseignement.contenu).to_html %>
+	<% end %>
+	
+	<% unless @enseignement.question.blank? %>
+	<h3><%= "Question au programme".t %></h3>
+	<%=RedCloth.new(@enseignement.question).to_html %>
+	<% end %>
+	
+	<% unless @enseignement.objectif.blank? %>
+	<h3><%= "Objectifs".t %></h3>
+	<%= RedCloth.new(@enseignement.objectif).to_html %>
+	<% end %>
+
+	<% unless @enseignement.plan.blank? %>
+	<h3><%= "Plan".t %></h3>
+	<%= RedCloth.new(@enseignement.plan).to_html %>
+	<% end %>
+
+	<% unless @enseignement.bibliographie.blank? %>
+	<h3><%= "Bibliographie".t %></h3>
+	<%= RedCloth.new(@enseignement.bibliographie).to_html %>
+	<% end %>
+
+	<% unless @enseignement.evaluation.blank? %>
+	<h3><%= "Evaluation".t %></h3>
+	<%= RedCloth.new(@enseignement.evaluation).to_html %>
+	<% end %>
+
+	<% unless @enseignement.remarque.blank? %>
+	<h3><%= "Remarques".t %></h3>
+	<%= RedCloth.new(@enseignement.remarque).to_html %>
+	<% end %>
+	
+	<% unless @documents.blank? %>
+	<h3><%= "Documents".t %></h3>
+	<ul>
+		<% for document in @documents %>
+		<li><%= link_to document.filename, document.public_filename %></li>
+		<% end %>
+	</ul>
+	<% end %>
+<% if logged_in?  %>
+	<p><%= link_to "Modifier l'enseignement", edit_enseignement_path(:id => @enseignement) %>  <%= link_to "Supprimer l'enseignement", enseignement_path(:id => @enseignement), :confirm => 'Etes vous sûre ?', :method => :delete  %> 
+		<br/><em><%=h @enseignement.updated_at %> </em> </p>
+<% end %>
+</div>

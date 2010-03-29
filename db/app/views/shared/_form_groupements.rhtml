@@ -1,0 +1,7 @@
+<p><b>Enseignement</b><br>
+<%= f.select :enseignement_id , @enseignements.collect {|c| [ c.libelle, c.id ] }%></p>
+
+<p><b>Groupes</b><br>
+<%= f.select :groupe_id  , @groupes.collect {|c| [ c.title, c.id ] }%></p>
+
+<p><%= submit_tag "Ajouter un groupement" %></p>

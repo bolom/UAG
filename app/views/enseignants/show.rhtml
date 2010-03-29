@@ -1,0 +1,56 @@
+<% content_for :stylesheet do %>
+<style type="text/css">
+ul li {
+	list-style-type: disc;
+}
+</style>
+<% end %>
+<h1> <%=h @enseignant.prenom %> <%= @enseignant.nom.upcase %></h1>
+<h4><%= @enseignant.fonction %></h4> 
+<%= image_tag( @enseignant.public_filename , :class => "right" , :size => @enseignant.image_size)   %>
+<address><%= @adresse %></address>
+<p>
+  <b><%= "Courriel".t %>:</b>
+  <%=h @enseignant.email %><br/>
+  <b><%= "Bureau".t %></b>
+  <%=h @enseignant.telephone %>
+</p>
+<% unless @enseignant.recherche.blank? %>
+<h3><%= "Orientation de recherche".t %></h3>
+<%= RedCloth.new(@enseignant.recherche).to_html %>
+<% end %>
+<% unless @prof_enseigns.blank? %>
+<h3><%= "Enseignements".t %></h3>
+<ul>
+	<% for enseignement in @prof_enseigns %>
+	<li style="list-style-type: none;">
+	<%= link_to enseignement.libelle + " " + enseignement.question, enseignement_path(:id => enseignement) %>
+	<% if current_prof?(@enseignant.id)  %>
+	<%= link_to image_tag('edit.png'),	edit_enseignement_path(:id => enseignement ) %>
+	<%= link_to image_tag('trash.gif'),
+	contribution_path(:id => enseignement.contributions.find_by_enseignant_id(@enseignant.id).id ),
+	 :confirm => 'Etes vous sure ?', :method => :delete %>
+	<% end %>
+	</li>
+		<% end %>
+</ul>
+<% end %>
+<% if current_prof?(@enseignant.id)  %>
+<% form_for(:contribution, :url => contributions_path) do |f| %>
+<%= render :partial => 'shared/form_contribution' , :locals => { :f => f } %>
+<% end %>
+<% end  %>
+
+<% unless @enseignant.publication.blank? %>
+<h3><%= "Choix de publications".t %></h3>
+<%= RedCloth.new(@enseignant.publication).to_html %>
+<% end %>
+<% unless @enseignant.personal.blank? %>
+<h3><%= "Réflexions".t %></h3>
+<%= RedCloth.new(@enseignant.personal).to_html %>
+<% end %>
+<% if current_prof?(@enseignant.id)  %>
+<p><%= link_to 'Modifier la fiche', edit_enseignant_path(:id => @enseignant) %> |
+<%= link_to 'Toutes les fiches', enseignants_path %> 
+</p>
+<% end  %>

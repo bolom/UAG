@@ -1,0 +1,7 @@
+<p><b>Enseignement</b><br>
+<%= f.select :enseignement_id , @enseignements.collect {|c| [ c.libelle, c.id ] }, { :selected => @contribution.enseignement_id }%></p>
+
+<p><b>Enseignant</b><br>
+<%= f.select :enseignant_id  , @enseignants.collect {|c| [ c.nom, c.id ] }, { :selected => @contribution.enseignant_id  }%></p>
+
+<p><%= submit_tag "Ajouter un enseignement" %></p>

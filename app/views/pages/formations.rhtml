@@ -1,0 +1,8 @@
+<%= render :partial => 'shared/menu_formation' %>
+<div id="contenu">
+<%= render :partial => "formation_#{session[:locale]}" %>
+<% if logged_in?  %>
+	<p><%= link_to 'Ajouter une formtion', new_enseignement_path %> </p>
+<% end %>
+</div>
+<hr/>

@@ -1,0 +1,23 @@
+<%= error_messages_for('enseignant',
+    :attr_names => {'nom' => 'Le champs nom ne peut être vide.',
+        			'prenom' => 'Le champs prénom ne peut être vide.'},
+    :defaults => true,
+    :header => 'Vous devez corriger {count} erreur(s) avant de sauvegarder cette fiche.',
+    :sub_header => 'Les champs suivant sont erronés' ) %>
+<h3>Nom</h3><%= f.text_field :nom , {:style => "width: 200px"} %>
+
+<h3>Prenom</h3><%= f.text_field :prenom ,{:style => "width: 200px"} %>
+<p><b>Adresses :</b><%= f.select :adresse, @enseignant.adresses.collect {|c| c}, { :selected => @enseignant.adresse }%></p>
+<p><b>Type :</b> <%= f.select :groupe , %w{ Archeo Hist_anci Hist_medi Hist_mode Hist_conte Ext Adm}, { :selected => @enseignant.groupe }%></p>
+<h3>Fonction</h3><%= f.text_field :fonction,{:style => "width: 200px"} %>
+<p><b>Photo :</b> <%= f.file_field :uploaded_data %></p>
+
+<h3>Email</h3><%= f.text_field :email   ,{:style => "width: 300px"} %>
+
+<h3>Telephone</h3><%= f.text_field :telephone,  {:style => "width: 300px"} %>
+
+<h3>Recherche :</h3><%= f.text_area :recherche , :rows => 20 , :cols => 100%>
+
+<h3>publication :</h3><%= f.text_area :publication , :rows => 20 , :cols => 100%>
+
+<h3>Personal :</h3><%= f.text_area :personal , :rows => 20 , :cols => 100%>

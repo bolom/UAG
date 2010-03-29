@@ -1,0 +1,27 @@
+<%= render :partial => 'menu_echange' %>
+<div id="contenu">
+<%= render :partial => "partenaires_#{session[:locale]}" %>
+<% for universite in @universites %>
+<dl class="universite">
+	<dt><%= link_to universite.name, universite.link %>
+		<% if logged_in?  %>
+			 <%= link_to image_tag('edit.png'), edit_universite_path(:id => universite) %>
+		<%= link_to image_tag('trash.gif'), universite_path(:id => universite), :confirm => 'Etes vous sure ?', :method => :delete %>
+		<% end %>
+
+	</dt>
+	<dd><%= link_to image_tag(universite.public_filename), universite.link %></dd>
+	<dd><%=RedCloth.new(universite.students).to_html %></dd>
+	<dd>
+		<ul><%=RedCloth.new(universite.definition).to_html %></li>
+		</ul>
+	</dd>
+	<% unless  universite.remarque.blank? %><dd><%=RedCloth.new(universite.remarque).to_html %></dd><% end %>
+</dl>
+<% end %>
+</div>
+<% if logged_in?  %>
+	 <%= link_to 'ajouter une universite', new_universite_path %>
+<% end %>
+
+<hr/>

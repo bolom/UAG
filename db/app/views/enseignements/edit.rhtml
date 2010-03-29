@@ -1,0 +1,13 @@
+<%= render :partial => 'shared/menu_formation' %>
+<div id="contenu">
+	<h1>Modifier l' " <%=h @enseignement.libelle %> "</h1>
+
+<%= error_messages_for :enseignement %>
+<% form_for(:enseignement, :url => enseignement_path(:id => @enseignement), :html => { :method => :put }) do |f| %>
+<%= render :partial => 'form' , :locals => { :f => f } %>
+  <p>
+    <%= submit_tag "Modifier" %> <%= link_to "Voir l'enseignement", enseignement_path(:id => @enseignement) %>
+<a href="http://www.siriel.info/misc/guide-styles.html">Comment Formater</a>
+  </p>
+<% end %>
+ </div>

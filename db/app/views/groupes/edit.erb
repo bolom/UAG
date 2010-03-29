@@ -1,0 +1,12 @@
+<h1>Editer le parcour</h1>
+
+<%= error_messages_for :parcour %>
+
+<% form_for(:parcour, :url => parcour_path(@parcour), :html => { :method => :put }) do |f| %>
+  <p>
+   <%= f.text_field :title %> <%= submit_tag "Modifier le parcour" %>
+  </p>
+<% end %>
+
+<%= link_to 'Voire le parcour', parcour_path(@parcour) %> |
+<%= link_to 'Tous les parcour', parcours_path %>

@@ -1,0 +1,18 @@
+# Deployment database.yml
+
+development:
+  adapter: sqlite3
+  database: db/uag-histoire_production
+
+
+test:
+  adapter: sqlite3
+  database: db/uag-histoire_test
+ 
+production:
+  adapter: mysql
+  database: uag-bdd
+  username: admin_mysql
+  password: 4knygiC/svu
+  host: localhost
+  

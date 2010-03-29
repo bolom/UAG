@@ -1,0 +1,691 @@
+/******************************************************/
+/*           Style Globales                           */
+/******************************************************/
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font: 78%  "Lucida Grande", "Trebuchet MS", Arial, sans-serif;
+	text-align: center;
+	background: url(../images/background.gif) top left repeat-x;
+}
+
+#container {
+	position: relative;
+	min-height: 100%;
+	height: 100%;
+}
+/******
+/*       TITRES
+/******/
+h1, h2 , h4, h5, h6 {
+	line-height: normal;
+	font-weight: normal;
+	text-align: left;
+	color: #321b40;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	line-height: normal;
+	font-weight: normal;
+	text-align: left;
+	color: #321b40;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+h1 a:link, h1 a:visited  {
+	text-decoration: none;
+	color: #9f8cae;
+}
+
+h1 a:hover {
+	color: #9f8cae;
+} 
+/******
+/*       PARAGRAPHES
+/******/
+p {
+	font-size: 1em;
+	font-weight: normal;
+	text-align: justify;
+	margin: 5px 0 10px 0;
+	color: #333;
+}
+
+blockquote { 
+ 	padding-left:10px;
+	padding-right:30px;
+	padding-top:.5em;
+	margin-bottom:1em;
+	border-left:4px solid #DDD;
+}
+blockquote p{
+	font-size:1.1em;
+	line-height:1.45;
+	padding-bottom:.2em;
+	color:#666;
+}
+p a:link, p a:visited  {
+	text-decoration: underline;
+	color: #333;
+	font-weight: bold;
+}
+
+p a:hover {
+	color: #321b40;
+	font-weight: bold;
+}
+/******
+/*       Images
+/******/
+.left{ 
+	float:left; 
+	padding: 5px;
+	background-color: #EEE;
+	margin: 10px;
+	}
+.right { 
+	float:right; 
+	padding: 5px;
+	background-color: #EEE;
+	margin: 10px;
+}
+
+.flag_right{ 
+	float:right; 
+	padding: 2px;
+}
+.clear{ clear:both; height:1px; font-size:1px; line-height:1px; }
+a img{ border:none; }
+
+/*-----------------------------------------------------------------------------------------------
+ Listes
+-----------------------------------------------------------------------------------------------*/
+ol {
+	font-size: 1em;
+	margin-left: 20px;
+	margin-top: 0;
+	text-align: left;
+}
+
+ol li {
+	margin-bottom: 5px;
+}
+
+ul {
+	font-size: 1em;
+	color: #333;
+	margin-top: 5px;
+	list-style-type:none;
+}
+
+ul li {
+	margin: 5px;
+}
+li a:link, li a:visited  {
+	text-decoration: underline;
+	color: #333;
+}
+
+li a:hover {
+	color: #321b40;
+}
+
+ul.dates {
+	list-style-type:none;
+	margin: 10px 330px 10px 0;
+	text-align: justify;
+	font-size: 1em;
+	color: #333;
+}
+
+ul.dates li {
+	list-style-type:none;
+	margin:0;
+	padding:10px 0 0 0;
+
+}
+
+span.date {
+	color: #9f8cae;
+	font-size: 1.15em;
+}
+/******
+/*       dl
+/******/
+dl {
+	width: 170px;
+	border-top: 5px solid #9f8cae;
+	text-align: left;
+	padding-bottom: 5px;
+	float: left;
+	margin: 0;
+}
+
+dt {
+	color: #321b40;
+	text-align: center;
+	font-size: 1.3em;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 5px 10px 5px 0;
+	background-color: #f1ecf4;
+}
+
+dt a:visited  {
+	color: #321b40;
+}
+
+dt a:hover {
+	color: #333;
+	
+}
+
+dd {
+	color:#333;
+	margin:0;
+	padding:0 0 5px 0;
+}
+
+dd ul {
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+dd li {
+	padding: 2px 0 2px 0;
+}
+
+dd a {
+	text-decoration: none;
+}
+
+dd  a:hover {
+	color: #321b40;
+}
+
+/*-----------------------------------------------------------------------------------------------
+  Layout / Base Page Styling
+-----------------------------------------------------------------------------------------------*/
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #321b40;
+}
+
+hr{
+	clear:  both;
+	visibility: hidden;
+}
+
+strong {
+	color: #321b40;
+}
+
+em {
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+address {
+	width: 400px;
+	text-align: justify;
+	margin: 5px;	
+	font-size: 0.9em;
+}
+.left { float:left; }
+.right{ float:right; }
+a img{ border:none; }
+img {
+	margin: 0;
+	padding: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------
+  Notices
+-----------------------------------------------------------------------------------------------*/
+#flash_notice {
+	font-size:0.9em;
+	text-align: center;
+}
+
+.notice {
+	border: 2px solid #321b40;
+	background-color: #9f8cae;
+	padding:7px 15px;
+	margin:10px;
+	font-size:0.75em;
+	color: #FFF;
+}
+.notice_big  {
+	border: 2px solid #87C43B;
+	background-color: #87C43B;
+	padding: 5px 10px  5px 20px;
+	margin: 0;	
+	color: #FFF;
+	width: 480px;
+	margin-left: auto;
+	margin-right: auto;		
+}
+
+.notice_big h1 {
+	font-size:0.75em;
+}
+p.notice a:hover  {
+	text-decoration: underline;
+	color: #FFF;
+	font-weight: bold;
+}
+/*-----------------------------------------------------------------------------------------------
+  header
+-----------------------------------------------------------------------------------------------*/
+#header {
+	padding: 0;
+	position: relative;
+	min-width:  760px;
+	max-width: 840px;
+	margin: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------
+  Logo
+-----------------------------------------------------------------------------------------------*/
+#logo {
+	padding: 0;
+	margin-right: 10px;
+	width:  188px;
+	height: 109px;
+	float: left;
+}
+/*-----------------------------------------------------------------------------------------------
+  NAVIGATIONS
+-----------------------------------------------------------------------------------------------*/
+#navigation {
+	padding: 55px 0 0 0;
+	text-align: left;
+}
+
+#navigation ul {
+	margin: 0;
+	padding: 0;
+    display: inline;
+	text-align: center;
+	font-size: 1em;
+ }
+
+#navigation ul li {
+    padding: 0 20px 0 0;
+	margin: 0;
+    list-style: none;
+    display: inline;
+}
+
+#navigation a {
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #9f8cae;
+}
+
+#header .current {
+	border-bottom: 5px solid #9f8cae;
+}
+/******************************************************/
+/*          Content, Left, Right                      */
+/******************************************************/
+#content {
+	padding: 0;
+	position: relative;
+	width: 840px;
+	margin: auto;	
+	text-align: left;
+}
+
+#left {
+	float: left;
+	border-right: 1px dashed #CCC;
+	margin: 0;
+	padding: 0 20px 20px 0 ;
+}
+
+#right {
+	margin-left: 420px;
+}
+
+.sous_barre {
+	padding: 0 0 20px 0;
+	margin: 0 0 20px 0;
+	border-bottom: 1px dashed #CCC;
+}
+
+#contenu {
+	margin-left: 200px;
+	padding-top: 10px;
+}
+/******************************************************/
+/*          Calendrier, News                          */
+/******************************************************/
+a.newsarchive {
+	margin: 0;
+	padding: 0;
+}
+
+.latest {
+	margin: 15px 0 15px 0;
+	padding: 0;
+	width: 300px;
+	height: 50px;
+}
+
+.latest .time {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 6px 0;
+	background: url(../images/date_bg.gif) no-repeat top left;
+	text-align: center;
+	width: 48px;
+	height: 48px;
+	line-height: 1em;
+}
+
+.latest .time .month {
+	margin: 0 0 3px 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 75%;
+	color: #a0a0a0;
+	letter-spacing: 1px;
+}
+
+.latest .time .day {
+	margin: 1px 0 0 0;
+	padding: 0;
+	font-size: 140%;
+	color: #606060;
+}
+
+.latest h1.newstitle {
+	margin: 0;
+	padding: 22blocpx 0 0 0;
+	font-size: 95%;
+	font-weight: normal;
+}
+
+.latest h1.newstitle a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #999999;
+}
+
+.latest h1.newstitle a:hover {
+	color: #475861;
+	text-decoration: underline;
+}
+/* HOME - CLIENT LOGIN ********************************************/
+.setting {
+	float: left;
+	margin: 5px 0 10px 0;
+	padding: 0;
+	color: #999999;
+}
+
+.setting label.field {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 5px 0 0 0;
+	width: 75px;
+}
+
+.setting input {
+	border: 1px solid #999;
+	background-color: #edeff0;
+	width: 227px;
+	height: 20px;
+	color: #404040;
+}
+
+.controls {
+	float: left;
+	margin: 10px 0 0 0;
+	padding: 0;
+	width: 100%;
+}
+
+.controls input.submit {
+	float: right;
+	margin: 0;
+	padding: 0;
+	background: url(../images/button_submit.gif) 0 0 no-repeat;
+	width: 95px;
+	height: 27px;
+}
+/******************************************************/
+/*          Footer                                    */
+/******************************************************/
+#footer {
+	background: url(../images/background-plan.png) repeat-x;
+	width: 100%;
+	clear: both;
+	bottom: 0;
+	margin: 10px 0 10px 0;
+	padding: 10px 0 0 0;
+}
+
+#footer #planAll {
+	min-width:  760px;
+	max-width: 840px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#footer .plan {
+	margin-top: 10px;
+	margin-left: 5px;
+	float: left;
+	width: 150px;
+	text-align: left;
+}
+
+.plan  a:link, .plan a:visited {
+	color: #999;
+}
+
+.plan a:hover {
+	color: #8cc63f;
+}
+
+.plan  h1 {
+	font-size: 12px;
+	color: #666;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin: 0;
+}
+
+#footer ul {
+	color: #CCC;
+	font-size: 0.9em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 10px 0;
+	width: 100%;
+	text-align: left;
+}
+
+#footer li {
+	margin: 2px 0 0 0;
+}
+/***************************************************************************************/
+/* Formulaire
+***************************************************************************************/
+.tabpanel {
+  border: 1px solid #6aa;
+  margin: 10px;
+  padding: 5px;
+  background: #bee;
+  width: 530px;
+}
+.image_input {
+  	vertical-align: middle;
+	border: 0;
+}
+
+/************
+** Formulaire
+***********/
+fieldset.publicForm {
+    border: 1px solid  #321b40;
+	margin-top: 30px;
+	margin-bottom: 0;
+	width: 100%;
+
+}
+
+fieldset.publicForm p {
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+fieldset.publicForm legend {
+	color: #321b40;
+	font-weight: bold;
+}
+
+fieldset.publicForm textarea {
+	border: 2px solid #CCC;
+	font-size: 14px;
+	padding: 2px;
+	width: 300px;	
+}
+
+fieldset.publicForm textarea:focus {
+	border: 2px solid #321b40;
+	font-weight: bold;
+}
+
+fieldset.publicForm input {
+	border: 2px solid #CCC;
+	font-size: 14px;
+	padding: 2px;
+	width: 300px;	
+}
+
+fieldset.publicForm input:focus {
+	border: 2px solid  #321b40;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 2px;
+	width: 300px;
+}
+
+.label_form {	/*** Mise en forme des intitulés de champs ***/
+	float: left;	/*** Très important, ne pas suprimer ! ***/
+	width: 160px;	
+	text-align: right;	
+	margin: 0;
+	padding: 0 .5em 0 0;
+	line-height: 1.8;	/*** ... et centrés verticalement. ***/
+}
+
+.oblig {
+	float: left;	/*** Très important, ne pas suprimer ! ***/
+	width: 150px;	
+	text-align: right;	
+	margin: 0;
+	padding: 0 .5em 0 0;
+	line-height: 1.8;	/*** ... et centrés verticalement. ***/
+	font-weight: bold;
+}
+/**********************************************************
+***ERRORO
+**********************************************************/
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/**********************************************************
+*** Université Partenaires
+**********************************************************/
+dl.universite
+{
+	border: 5px solid #DDD;
+	width:620px;
+	margin:10px;
+}
+
+.universite dt
+{
+	font-weight: bold;
+	color: #959289;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.universite dd img
+{
+	border: 1px solid #DDD;
+	width: 250px;
+	height: 168px;
+	float: left;
+	margin-right: 2px;
+}
+
+.universite dd
+{
+	margin: 0;
+	padding: 0 10px 5px 10px;
+	font-size: 90%;
+	text-align: left;
+}
+.universite ul
+{
+	text-align: left;
+}

@@ -1,0 +1,34 @@
+<%= render :partial => 'shared/menu_formation' %>
+<% apply_behaviours do
+	on "#add_parcour form", make_remote_form  
+	on  "#all_parcours form", make_remote_form   ( :loading => "Element.show('indicator_petit')",
+												  :complete => "Element.hide('indicator_petit')",
+												  :confirm => "Etes vous sure ?")
+end %>
+<div id="contenu">
+	<h1>Les Parcours</h1>
+
+	<div id="add_parcour">
+		
+		<% if logged_in?  %>
+		<% form_for :parcour, :url => parcours_path do |f| %>
+			<%= f.text_field :title %> <%= submit_tag "Ajouter un nouveau parcours" %>
+		<% end %>
+		</div>
+		<ul id="all_parcours">
+			<% for parcour in @parcours %>
+			 <% @parcour = parcour %> 
+			<%= render :partial => 'liste_parcours',  :locals => { :parcour => parcour} %>
+			<% end %>
+		</ul>
+		<% else %>
+		</div>
+		<ul id="all_parcours">
+			<% for parcour in @parcours %>
+			<li><%= link_to parcour.title, parcour_path(parcour)  %></li>
+			<% end %>	
+		</ul>
+		<% end %>	
+
+</div>
+<hr/>

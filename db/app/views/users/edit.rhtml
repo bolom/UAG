@@ -1,0 +1,19 @@
+<h1><%= h @user.login %> personnaliser votre Profil</h1>
+<%= error_messages_for :user %>
+<% form_for :user, :url => user_path(:id => @user), :html => { :method => :put } do |f| -%>
+<!-- Visible seulement par les admin -->
+<% if is_admin? %>
+<p><label for="email">Email</label><br/>
+<%= f.text_field :email %></p>
+<p><label for="role">Role </label><%= f.select :role,[['Admin'],['Prof']], { :selected => @user.role }%></p>
+<p><b>Prof : </b><br>
+<%= f.select :enseignant_id  , @profs.collect {|c| [ c.nom, c.id ] }, :include_blank => true %></p>
+<!-- Visible seulement par les admin -->
+<% end -%>
+<label for="user_password"><%= 'Password'[:password_title] %></label><br />
+<p>Entrer le nouveau mot de passe deux fois. Il doit être de 5 caractères minimum</p>
+<p><%= f.password_field :password, :size => 16 %> (une fois)</p>
+<p><%= f.password_field :password_confirmation, :size => 16 %> ( en encore)</p>
+
+<p><%= submit_tag 'Modifier votre Profil' %></p>
+<% end -%>

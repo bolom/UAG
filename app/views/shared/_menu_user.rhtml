@@ -1,0 +1,33 @@
+<dl>
+	<dt><%= link_to "Votre Profil", user_path(:id => current_user) %></dt>
+	<dd>
+		<ul>
+
+			<% unless isBolo? %>
+			<%= link_to "Votre fiche", enseignant_path(:id => current_user.prof) %>
+			<% end -%>
+		   <li> 
+				<%= link_to 'Changer de mot de passe', edit_user_url(:id => current_user)  %>
+			</li>
+		</dd>
+		<dt>Divers</dt>
+		<dd>
+			<ul>
+				<% if is_admin? %>
+				<li style="list-style-type: none;">
+					<%= link_to "Toutes les fiches enseignants", enseignants_url %>
+				</li>
+				<li style="list-style-type: none;">
+					<%= link_to "Les utilisateurs", users_path %>
+				</li>
+				<% end -%>
+				<li style="list-style-type: none;">
+					<%= link_to "Traduire", :controller => "translate", :action => "index" %></li>
+				</ul>
+				<li style="list-style-type: none;">
+					<%= link_to "Tous les documents",  documents_url(:menu => 'user') %>
+				</li>
+			</ul>
+		</dd>
+
+</dl>

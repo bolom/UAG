@@ -1,0 +1,22 @@
+<h1>Editing contribution</h1>
+
+<%= error_messages_for :contribution %>
+
+<% form_for(:contribution, :url => contribution_path(@contribution), :html => { :method => :put }) do |f| %>
+  <p>
+    <b>Enseignement</b><br />
+    <%= f.text_field :enseignement_id %>
+  </p>
+
+  <p>
+    <b>Enseignant</b><br />
+    <%= f.text_field :enseignant_id %>
+  </p>
+
+  <p>
+    <%= submit_tag "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', contribution_path(@contribution) %> |
+<%= link_to 'Back', contributions_path %>

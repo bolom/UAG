@@ -1,0 +1,16 @@
+<%= render :partial => 'shared/menu_formation' %>
+<div id="contenu">
+	<h1><%= in_place_editor_field :groupe, 'title' %> <%= in_place_editor_field :groupe, 'type' , :width => 200 %></h1>
+	<% form_for(:groupement, :url => groupements_url) do |f| %>
+		<%= f.select :enseignement_id , @enseignements.collect {|c| [ c.libelle, c.id ] }%>
+		<%= f.hidden_field  :groupe_id,  :value => @groupe.id %>
+		<%= image_submit_tag('/images/add_petit.jpg') %>
+	<% end %>
+	<ul id="all_enseignements">
+		<% for enseignement in @groupe.enseignements %>
+			<%= render :partial => 'liste_enseignements' , :locals => { :enseignement => enseignement } %>
+		<% end %>
+	</ul>
+	<%= link_to 'tous les groupes', groupes_path %>
+</div>
+<hr/>

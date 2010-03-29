@@ -1,0 +1,15 @@
+ <%= render :partial => 'shared/menu_user' %>
+<div id="contenu">
+<h2>Editer le document 	<%= @document.filename %></h2>
+
+<% form_for(:document, :url => document_path(:id => @document), :html => { :method => :put }) do |f| %>
+<p>
+	<label> Groupe </label>
+	<%= f.select :groupe_document_id, @groupes.collect {|c| [ c.label, c.id ]},{:prompt => "-- Aucun Dossier --" , :selected => @document.groupe_document }%>
+</p>
+<p><label>Description</label> <%= f.text_area :description ,:rows => 5 , :cols => 50%> </p>
+<p>
+	<%= submit_tag "editer le document" %>
+</p>
+	<% end %>
+</div>

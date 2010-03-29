@@ -1,0 +1,8 @@
+<% @groupement = enseignement.groupements.find_by_groupe_id(@groupe.id).id %>
+<li id="groupement<%= @groupement %>">
+	<%= link_to enseignement.libelle + " " + enseignement.question, enseignement_path(:id => enseignement)  %>
+	 <%= link_to image_tag('trash.gif'),
+							groupement_path(:id => @groupement),
+ 							:confirm => 'Etes vous sure ?',
+ 							:method => :delete %>
+</li>

@@ -1,0 +1,11 @@
+<h1>Ajouter une nouvelle université partenaire</h1>
+
+<%= error_messages_for :universite %>
+
+<% form_for(:universite, :url => universites_path, 
+                      :html => { :multipart => true }) do |f| -%>
+<%= render :partial => 'form'  , :locals => { :f => f } %>
+<p>
+  <%= submit_tag 'Create' %>
+</p>
+<% end -%>

@@ -1,0 +1,26 @@
+<div id="welcome" class="sous_barre">
+	<h1>Department of History U.A.G</h1>
+	<p>The University of the Antilles and Guyana is the only university of the French départements in the Americas providing teaching in French. Its Department of History welcomes students living in the Caribbean overseas départements, students from mainland France, Europe – especially through the ERASMUS programme – and the Americas. We provide teaching from the first year of the Bachelor up to Master and PhD level. Our programme includes a classical component with the four grand periods of history (Antiquity, Middle Ages, Modern and Contemporary History) as well as courses in archaeology, heritage and Caribbean history all throughout the curriculum.  The taught courses thus prepare students for research and  doctoral projects in Antillean and Caribbean history.</p>
+</div>
+<div id="news" class="sous_barre">
+	<p>Le département d'histoire de l'université des Antilles et de la Guyane et l'équipe de recherche AIHP Géode tiennent à manifester toute leur sympathie au peuple haïtien endeuillé, et particulièrement aux étudiants qu'elle accueille et aux collègues haïtiens avec qui ils travaillent ordinairement.</p>
+</div>
+<div id="loginUser" >
+	<h1>Restricted Access</h1>
+	<% if logged_in? %>
+	<p>Access to <%= link_to	'personal settings', user_path(:id => current_user) %> or <%= link_to	'log out', session_path(session), :method => :delete %> </p>
+	<% else %>
+	<% form_tag sessions_path do -%>
+	<div class="setting">
+		<label class="field" for="name">Login : </label><%= text_field_tag 'login' %>
+	</div>
+	<div class="setting">
+		<label class="field" for="name">Password:</label><%= password_field_tag 'password' %>
+	</div>
+	<div class="controls">
+		<input class="submit" type="image" src="../images/button_submit.gif" value="Submit" alt="Submit" />
+		<label class="field">Remember me : </label> <%= check_box_tag 'remember_me' %>
+	</div>
+	<% end -%>
+	<% end %>
+</div>

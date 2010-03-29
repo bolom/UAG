@@ -1,0 +1,11 @@
+<ul>
+	<% for enseignant in @enseignants %>
+	<li>
+	<%= link_to ( enseignant.prenom + " " +enseignant.nom.upcase), enseignant_path(:id => enseignant) %>
+	<%= link_to image_tag('edit.png'), edit_enseignant_path(:id =>enseignant) %>
+	<%= link_to image_tag('trash.gif'), enseignant_path(:id => enseignant), :confirm => 'Etes vous sûre ?', :method => :delete %>
+	</li>
+	<% end %>
+</ul>
+
+<p><%= link_to 'Ajouter un enseignant', new_enseignant_path %></p>

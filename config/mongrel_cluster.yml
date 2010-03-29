@@ -1,0 +1,6 @@
+---
+cwd: /var/www/vhosts/uag-histoire.com/current
+port: "10160"
+environment: production
+pid_file: log/mongrel.pid
+servers: 2
