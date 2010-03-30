@@ -45,8 +45,6 @@ end
 
 after "deploy:update_code" do
   run "ln -fs #{shared_path}/config/database.yml #{release_path}/config/"
-  run "ln -fs #{shared_path}/config/mongrel_cluster.yml #{release_path}/config/" 
-  run "ln -fs #{shared_path}/backup #{release_path}/"
   run "ln -fs #{shared_path}/upload #{release_path}/public/"
   run "chmod -R 775 #{release_path}/temp"
   
