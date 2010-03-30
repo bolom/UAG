@@ -30,8 +30,8 @@ namespace :deploy do
 end
 
 after "deploy:start" do
-  run "chown -R www-data #{deploy_to}"
-  run "chgrp -R www-data #{deploy_to}"
+  run "chown -R bolo #{deploy_to}"
+  run "chgrp -R psaserv #{deploy_to}"
   run "chmod -R 775 #{deploy_to}"
 end
 
@@ -48,6 +48,8 @@ after "deploy:update_code" do
   run "ln -fs #{shared_path}/config/mongrel_cluster.yml #{release_path}/config/" 
   run "ln -fs #{shared_path}/backup #{release_path}/"
   run "ln -fs #{shared_path}/upload #{release_path}/public/"
+  run "chmod -R 775 #{release_path}/temp"
+  
 end
 
 Dir[File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'hoptoad_notifier-*')].each do |vendored_notifier|
