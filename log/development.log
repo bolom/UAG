@@ -2023,3 +2023,5 @@ Rendered shared/_form_contribution (0.00092)
   [4;36;1mGlobalize::ViewTranslation Load (0.000298)[0m   [0;1mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Universités partenaires' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
   [4;35;1mGlobalize::ViewTranslation Load (0.000291)[0m   [0mSELECT * FROM "globalize_translations" WHERE (tr_key = 'Témoignages' AND language_id = 1930 AND pluralization_index = 1 AND namespace IS NULL) AND ( ("globalize_translations"."type" = 'ViewTranslation' ) ) LIMIT 1[0m
 Completed in 0.32311 (3 reqs/sec) | Rendering: 0.04115 (12%) | DB: 0.01290 (3%) | 200 OK [http://localhost/fr/enseignants/1]
+** [Hoptoad] Notifier 2.1.3 ready to catch errors
+** [Hoptoad] Notifier 2.1.3 ready to catch errors

@@ -45,9 +45,7 @@ end
 
 after "deploy:update_code" do
   run "ln -fs #{shared_path}/config/database.yml #{release_path}/config/"
-  run "ln -fs #{shared_path}/upload #{release_path}/public/"
-  run "chmod -R 775 #{release_path}/temp"
-  
+  run "ln -fs #{shared_path}/upload #{release_path}/public/"  
 end
 
 Dir[File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'hoptoad_notifier-*')].each do |vendored_notifier|
